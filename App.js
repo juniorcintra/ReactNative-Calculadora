@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {View, Text, Platform, StyleSheet} from 'react-native';
+import {View, Text, Platform} from 'react-native';
 import Button from './src/components/Button';
 import Display from './src/components/Display';
+import {styles} from './styles';
 
 const initialState = {
   displayValue: '0',
@@ -90,13 +91,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  buttons: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-});
